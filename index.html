@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>LukmaTV</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item not_interna">Notícia Interna</div>
+    <div class="grid-item hora_mundial">
+        <h2>Horários</h2>
+        <p>Brasília: <span id="brasilia-time"></span></p>
+        <p>Nova York: <span id="newyork-time"></span></p>
+        <p>Hong Kong: <span id="hongkong-time"></span></p>
+    </div>
+    <div class="grid-item prev_tempo" id="prev_tempo"></div>
+    <div class="grid-item dollar_hoje">
+        <h2 class="title">Dolar Hoje</h2>
+        <div id="dollar_hoje"></div>
+    </div>
+    <div class="grid-item video"></div>
+    <div class="grid-item aniversariante">
+        <img class="img_aniversariante" src="img/aniversariante/anv01.JPG" alt="Aniversariante 1">
+  <div class="cont_aniversariante">
+    <div class="titulo_aniversariante">Aniversariante 1</div>
+    <div class="desc_aniversariante">Descrição do aniversariante 1.</div>
+    <img class="icon_aniversariante" src="img/aniversariante/icon.gif" alt="icon">
+    </div>
+</div>
+<div class="grid-item aniversariante">
+    <img class="img_aniversariante" src="imagem2.jpg" alt="Aniversariante 2">
+    <div class="cont_aniversariante">
+      <div class="titulo_aniversariante">Aniversariante 2</div>
+      <div class="desc_aniversariante">Descrição do aniversariante 2.</div>
+      <img class="icon_aniversariante" src="img/aniversariante/icon.gif" alt="icon">
+    </div>
+    <!-- ... (outros itens da grid) -->
+  </div>
+  <script src="not_interna.js"></script>
+  <script src="hora.js"></script>
+  <script src="dollar_hoje.js"></script>
+  <script src="prev_tempo.js"></script>
+  <script src="aniversariante.js"></script>
+</body>
+</html>
