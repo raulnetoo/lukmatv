@@ -32,7 +32,7 @@ async function fetchExchangeRate(currency) {
     exchangeRateElement.innerHTML = `
       <span class="dollar-text">
         1 ${currencyInfo.name}
-        <img src="img/dollar/${currency.toLowerCase()}.png" alt="Bandeira do(a) ${currencyInfo.name}">
+        <img src="img/dollar/${currency.toLowerCase()}.png" alt="${currencyInfo.name}">
       </span>
       <br><strong style="font-size: 30px">=</strong><br>
       <span class="dollar-text">
