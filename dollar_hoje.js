@@ -24,10 +24,15 @@ async function fetchExchangeRate(currency) {
       exchangeRateToBRL = data.rates.BRL.toFixed(2);
     }
 
+    const currencyFlag = document.createElement('img');
+    currencyFlag.src = `img/dollar/${currency}.png`;
+    currencyFlag.alt = `${currencyInfo.name}`;
+    currencyFlag.classList.add('flag-icon');
+
     exchangeRateElement.innerHTML = `
       <span class="dollar-text">
         1 ${currencyInfo.name}
-        <img src="img/dollar/${currency}.png" alt="${currencyInfo.name}">
+        <img src="img/dollar/${currency.toLowerCase()}.png" alt="${currencyInfo.name}">
       </span>
       <br><strong style="font-size: 30px">=</strong><br>
       <span class="dollar-text">
@@ -48,4 +53,4 @@ function cycleCurrencies() {
 }
 
 fetchExchangeRate(currencies[currentCurrencyIndex].code);
-setInterval(cycleCurrencies, 10000); // Change currency every 10 seconds
+setInterval(cycleCurrencies, 10000); // Alternar moeda a cada 10 segundos
