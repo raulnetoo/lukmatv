@@ -21,7 +21,7 @@ const aniversariantes = [
     setor: 'Setor: Marketing'
   },
   {
-    imagem: 'img/aniversariante/anv04.jpeg',
+    imagem: 'img/aniversariante/anv04.jpg',
     titulo: 'Aniversariante',
     nome: 'Chindhel',
     descricao: '09 de Setembro',

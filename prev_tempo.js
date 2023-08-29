@@ -18,7 +18,7 @@ const weatherDescriptions = {
     'chuva': 'Chuva', 
     'trovoada': 'Trovoada',
     'neve': 'Neve',
-    'névoa': 'Névoa',
+    'névoa': 'Nublado',
     'algumas nuvens': 'Algumas nuvens',
 };
 

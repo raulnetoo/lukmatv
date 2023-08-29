@@ -6,9 +6,14 @@ const news = [
     image: 'img/noticia/not01.jpg'
   },
   {
-    title: 'Aniversario Multieletrica',
-    description: 'Multieletrica completa seus 21 anos, venha comemorar com nós.',
-    image: 'img/noticia/not02.jpg'
+    title: 'Embaixador da Multieletrica',
+    description: 'Fabiano Hayasaki arquiteto se torna Embaixador oficial da Multieletrica.',
+    image: 'img/noticia/not02.png'
+  },
+  {
+    title: 'Garoto Propaganda',
+    description: 'Neto o Craque, ex jogador, comentarista é o novo Garoto Propaganda da Multieletrica.',
+    image: 'img/noticia/not03.jpg'
   },
   // ... Adicione mais notícias conforme necessário
 ];
