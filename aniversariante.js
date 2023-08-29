@@ -12,5 +12,5 @@ function nextAniversariante() {
   showAniversariante(currentAniversariante);
 }
 
-setInterval(nextAniversariante, 20000);
+setInterval(nextAniversariante, 5000);
 showAniversariante(currentAniversariante);

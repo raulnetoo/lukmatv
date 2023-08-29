@@ -13,8 +13,8 @@ body, html {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 10px;
     max-width: 100%;
     margin: 0 auto;
@@ -30,7 +30,7 @@ body, html {
 
 .not_interna {
     background-color: rgba(0, 0, 0, 0.5);
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     grid-column: 1 / span 2;
     display: flex;
     flex-direction: column;
@@ -55,8 +55,8 @@ body, html {
 }
 
 .hora_mundial {
-    grid-row: 4 / span 2;
-    grid-column: 1;
+    grid-row: 5 / span 2;
+    grid-column: 6;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -68,8 +68,8 @@ body, html {
 }
 
 .prev_tempo {
-    grid-row: 4 / span 2;
-    grid-column: 2;
+    grid-row: 5 / span 2;
+    grid-column: 5;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -86,8 +86,8 @@ body, html {
 }
 
 .dollar_hoje {
-    grid-row: 4 / span 2;
-    grid-column: 3;
+    grid-row: 5 / span 2;
+    grid-column: 4;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -100,16 +100,16 @@ body, html {
     place-items: center;
 }
 .video {
-    grid-row: 1 / span 3;
-    grid-column: 3 / span 3; /* Adjusted the column range */
+    grid-row: 1 / span 4;
+    grid-column: 3 / span 4; /* Adjusted the column range */
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .aniversariante {
-    grid-row: 4 / span 2;
-    grid-column: 4 / span 2;
+    grid-row: 5 / span 2;
+    grid-column: 1 / span 3;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -117,32 +117,45 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 30px;
    
 }
 
 .img_aniversariante {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
-  }
+}
   
   .cont_aniversariante {
     flex: 1;
-    padding: 0 10px;
-  }
+    padding: 0 20px;
+    margin-left: -80px;
+}
   
   .titulo_aniversariante {
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: -95px;
+    /* margin-top: -85px; */
+    font-size: 28px;
+}
+
+  .nome_aniversariante {
+    font-weight: bold;
+    margin-bottom: 20px;
     font-size: 24px;
-  }
-  
+}
+
   .desc_aniversariante {
     margin-bottom: 10px;
     font-size: 20px;
-  }
+}
+
+  .setor_aniversariante {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
   
   .icon_aniversariante {
     width: 150px;
@@ -150,4 +163,21 @@ body, html {
     position: absolute;
     bottom: 0;
     right: 10px;
-  }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    
+    .not_interna,
+    .video,
+    .hora_mundial,
+    .prev_tempo,
+    .dollar_hoje,
+    .aniversariante {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
