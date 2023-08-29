@@ -41,4 +41,11 @@ async function fetchExchangeRate(currency) {
   }
 }
 
+function cycleCurrencies() {
+  currentCurrencyIndex = (currentCurrencyIndex + 1) % currencies.length;
+  const nextCurrency = currencies[currentCurrencyIndex].code;
+  fetchExchangeRate(nextCurrency);
+}
+
 fetchExchangeRate(currencies[currentCurrencyIndex].code);
+setInterval(cycleCurrencies, 10000); // Change currency every 10 seconds
