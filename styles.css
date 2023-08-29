@@ -102,9 +102,11 @@ body, html {
 .video {
     grid-row: 1 / span 4;
     grid-column: 3 / span 4; /* Adjusted the column range */
-    text-align: center;
-    color: white;
     background-color: rgba(0, 0, 0, 0.5);
+}
+.video video{
+    height: 100%;
+    width: 100%;
 }
 
 .aniversariante {

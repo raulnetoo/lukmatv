@@ -20,31 +20,24 @@
         <h2 class="title">Dolar Hoje</h2>
         <div id="dollar_hoje"></div>
     </div>
-    <div class="grid-item video"></div>
+    <div class="grid-item video">
+      <video id="video-player" controls autoplay muted>
+        <source id="video-source" src="" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+    </video>
+    </div>
     <!-- (Aniversariante 1)-->
     <div class="grid-item aniversariante">
-        <img class="img_aniversariante" src="img/aniversariante/anv01.JPG" alt="Aniversariante 1">
+        <img id="img" class="img_aniversariante">
         <div class="cont_aniversariante">
-          <div class="titulo_aniversariante">Aniversariante</div>
-          <div class="nome_aniversariante">Raul</div>
-          <div class="desc_aniversariante">31 de Dezembro</div>
-          <div class="setor_aniversariante">Setor: TI</div>
+          <div id="titulo" class="titulo_aniversariante">
+          </div>
+          <div id="nome" class="nome_aniversariante"></div>
+          <div id="desc" class="desc_aniversariante"></div>
+          <div id="setor" class="setor_aniversariante"></div>
         </div>
         <img class="icon_aniversariante" src="img/aniversariante/icon.gif" alt="icon">
     </div>
-    <!-- (Aniversariante 2)-->
-    <div class="grid-item aniversariante">
-        <img class="img_aniversariante" src="img/aniversariante/anv02.jpg" alt="Aniversariante 2">
-        <div class="cont_aniversariante">
-          <div class="titulo_aniversariante">Aniversariante</div>
-          <div class="nome_aniversariante">Giovaldo</div>
-          <div class="desc_aniversariante">30 de Agosto</div>
-          <div class="setor_aniversariante">Setor: Montagem</div>
-        <img class="icon_aniversariante" src="img/aniversariante/icon.gif" alt="icon">
-    </div>
-    <!-- (Aniversariante 3)-->
-    <!-- (Aniversariante 4)-->
-    <!-- (Aniversariante 5)-->
     <!-- ... (outros itens da grid) -->
   </div>
   <script src="not_interna.js"></script>
@@ -52,5 +45,6 @@
   <script src="dollar_hoje.js"></script>
   <script src="prev_tempo.js"></script>
   <script src="aniversariante.js"></script>
+  <script src="video.js"></script>
 </body>
 </html>
