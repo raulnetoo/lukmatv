@@ -39,7 +39,7 @@ body, html {
 }
 
 .not_interna img {
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 .news-item {
