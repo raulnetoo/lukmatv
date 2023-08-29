@@ -12,7 +12,7 @@ const news = [
   },
   {
     title: 'Garoto Propaganda',
-    description: 'Neto o Craque, ex jogador, comentarista é o novo Garoto Propaganda da Multieletrica.',
+    description: 'Neto o craque, ex jogador, comentarista é o novo Garoto Propaganda da Multieletrica.',
     image: 'img/noticia/not03.jpg'
   },
   // ... Adicione mais notícias conforme necessário
