@@ -32,7 +32,7 @@ const aniversariantes = [
     titulo: 'Aniversariante',
     nome: 'Marcos',
     descricao: '18 de Setembro',
-    setor: 'Setor: PCP'
+    setor: 'Setor: Expedição'
   },
   {
     imagem: 'img/aniversariante/anv06.jpeg',

@@ -3,7 +3,7 @@ const news = [
   {
     title: 'Corinthians fecha patrocínio com Lukma',
     description: 'Empresa vai exibir a sua marca na barra traseira do calção dos atletas do futebol masculino profissional',
-    image: 'img/noticia/not01.jpg'
+    image: 'img/noticia/not01.jpeg'
   },
   {
     title: 'Embaixador da Multieletrica',
@@ -26,7 +26,7 @@ function showNextNews() {
   const newsElement = document.createElement('div');
   newsElement.classList.add('news-item');
   newsElement.innerHTML = `
-    <img src="${currentNews.image}" alt="Imagem da Notícia" width="200" height="200">
+    <img src="${currentNews.image}" alt="Imagem da Notícia" width="200" height="250">
     <h2>${currentNews.title}</h2>
     <p>${currentNews.description}</p>
   `;

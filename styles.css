@@ -80,9 +80,10 @@ body, html {
 }
 
 .dollar-text img {
-    width: 1em; /* Set the width relative to the font size */
-    height: 1em; /* Set the height relative to the font size */
+    width: 1.2em; /* Set the width relative to the font size */
+    height: 1.2em; /* Set the height relative to the font size */
     vertical-align: middle; /* Align the image vertically with text */
+    border-radius: 50%;
 }
 
 .dollar_hoje {

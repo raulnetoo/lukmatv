@@ -1,0 +1,40 @@
+const exchangeRateElement = document.getElementById('dollar_hoje');
+const currencies = ['USD', 'EUR', 'GBP'];
+let currentCurrencyIndex = 0;
+
+async function fetchExchangeRate(currency) {
+  try {
+    const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${currency}`);
+    const data = await response.json();
+    const exchangeRateToBRL = data.rates.BRL.toFixed(2);
+
+    const currencyFlag = document.createElement('img');
+    currencyFlag.src = `img/dollar/${currency.toLowerCase()}.png`;
+    currencyFlag.alt = `Bandeira do(a) ${currency}`;
+    currencyFlag.classList.add('flag-icon');
+
+    exchangeRateElement.innerHTML = `
+      <span class="dollar-text">
+        1 ${currency}
+        <img src="img/dollar/${currency.toLowerCase()}.png" alt="Bandeira do(a) ${currency}">
+      </span>
+      <br><strong style="font-size: 30px">=</strong><br>
+      <span class="dollar-text">
+        ${exchangeRateToBRL} BRL
+        <img src="img/dollar/br.png" alt="Bandeira do Brasil">
+      </span>
+    `;
+  } catch (error) {
+    exchangeRateElement.textContent = 'Não foi possível obter a taxa de câmbio.';
+    console.error(error);
+  }
+}
+
+function cycleCurrencies() {
+  currentCurrencyIndex = (currentCurrencyIndex + 1) % currencies.length;
+  const nextCurrency = currencies[currentCurrencyIndex];
+  fetchExchangeRate(nextCurrency);
+}
+
+fetchExchangeRate(currencies[currentCurrencyIndex]);
+setInterval(cycleCurrencies, 10000); // Alternar moeda a cada 10 segundos

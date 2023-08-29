@@ -59,4 +59,8 @@ function updateWeatherWidget() {
     });
 }
 
+// Atualizar o widget inicialmente
 updateWeatherWidget();
+
+// Atualizar o widget a cada 1 minuto (60 segundos)
+setInterval(updateWeatherWidget, 10000); // 60000 ms = 60 s
