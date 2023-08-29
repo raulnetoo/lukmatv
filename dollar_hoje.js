@@ -25,7 +25,7 @@ async function fetchExchangeRate(currency) {
     }
 
     const currencyFlag = document.createElement('img');
-    currencyFlag.src = `img/dollar/${currency.toLowerCase()}.png`;
+    currencyFlag.src = `img/dollar/${currency}.png`;
     currencyFlag.alt = `${currencyInfo.name}`;
     currencyFlag.classList.add('flag-icon');
 
